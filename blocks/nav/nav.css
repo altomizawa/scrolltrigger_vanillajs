@@ -1,0 +1,132 @@
+
+.nav{
+  position: fixed;
+  background-color: #1c1c1c;
+  display: flex;
+  gap: 1rem;
+  padding-inline: 1rem; 
+  border-radius: 20px;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+} 
+
+.nav__ul{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-block: 0.5rem;
+
+  li{
+    overflow: hidden;
+  }
+}
+
+.nav__link{
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 1em;
+  font-size: 0.8rem;
+}
+
+.nav__mobile{
+  width: 80vw;
+  height: 100vh;
+  background-color:	#636363;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  padding-left: 2em;
+  transition: 300ms ease-in-out;
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: gray;
+    position: relative;
+  }
+
+  .nav__mobile-button{
+    color: white;
+  }
+}
+
+.nav__mobile_active{
+  right: 0%;
+}
+
+.nav__mobile-hamburger{
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 10000;
+  width: 50px;
+}
+
+#manifesto-link{
+  transition: 300ms ease-in-out;
+}
+
+#manifesto-link:hover{
+  transform: translateY(-120%);
+}
+
+#manifesto-link:after{
+  content: 'Manifesto';
+  color: white;
+}
+
+#careers-link{
+  transition: 300ms ease-in-out;
+}
+
+#careers-link:hover{
+  transform: translateY(-120%);
+}
+#careers-link:after{
+  content: 'Careers';
+  color: white;
+}
+
+#login-link
+#login-link:after{
+  content: 'Login';
+  color: white;
+}
+
+
+
+.nav__link-button{
+  border: 1px solid gray;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 12px;
+  height: min-content;
+  text-wrap: nowrap;
+}
+
+.nav__link-button_outline{
+  color: white;
+}
+.nav__link-button_dark{
+  background-color: white;
+  font-weight: 600;
+  color: #1c1c1c;
+  animation: twirl 3s cubic-bezier(.55,.13,.86,.55) forwards;
+
+}

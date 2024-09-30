@@ -1,0 +1,89 @@
+@keyframes vortex {
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes twirl__top {
+  to{
+    top: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: bottom left;
+    opacity: 0.8;
+  }
+}
+@keyframes twirl__bottom {
+  to{
+    bottom: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: top left;
+    opacity: 0.6;
+  }
+}
+
+@keyframes twirl__left {
+  to{
+    left: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: bottom right;
+    opacity: 0.6;
+  }
+}
+
+@keyframes twirl__right {
+  to{
+    right: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: top left;
+    opacity: 0.6;
+  }
+}
+@keyframes twirl__top-right {
+  to{
+    right: 30%;
+    top: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: bottom left;
+    opacity: 0.6;
+  }
+}
+@keyframes twirl__bottom-right {
+  to{
+    right: 30%;
+    bottom: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: top left;
+    opacity: 0.6;
+  }
+}
+@keyframes twirl__bottom-left {
+  to{
+    left: 30%;
+    bottom: 30%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: top right;
+    opacity: 0.6;
+  }
+}
+@keyframes twirl__top-left {
+  to{
+    left: 50%;
+    top: 40%;
+    scale: 0;
+    transform: rotate(60deg);
+    transform-origin: top left;
+    opacity: 0.6;
+  }
+}
+
+@keyframes slidesIntro {
+  to{
+    transform: translateY(0%);
+  }
+}

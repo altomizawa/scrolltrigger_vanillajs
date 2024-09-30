@@ -1,103 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-@keyframes vortex {
-  to{
-    transform: rotate(360deg);
-  }
-}
-@keyframes twirl__top {
-  to{
-    top: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: bottom left;
-    opacity: 0.8;
-  }
-}
-@keyframes twirl__bottom {
-  to{
-    bottom: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: top left;
-    opacity: 0.6;
-  }
-}
-
-@keyframes twirl__left {
-  to{
-    left: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: bottom right;
-    opacity: 0.6;
-  }
-}
-
-@keyframes twirl__right {
-  to{
-    right: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: top left;
-    opacity: 0.6;
-  }
-}
-@keyframes twirl__top-right {
-  to{
-    right: 30%;
-    top: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: bottom left;
-    opacity: 0.6;
-  }
-}
-@keyframes twirl__bottom-right {
-  to{
-    right: 30%;
-    bottom: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: top left;
-    opacity: 0.6;
-  }
-}
-@keyframes twirl__bottom-left {
-  to{
-    left: 30%;
-    bottom: 30%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: top right;
-    opacity: 0.6;
-  }
-}
-@keyframes twirl__top-left {
-  to{
-    left: 50%;
-    top: 40%;
-    scale: 0;
-    transform: rotate(60deg);
-    transform-origin: top left;
-    opacity: 0.6;
-  }
-}
-
-@keyframes slidesIntro {
-  to{
-    transform: translateY(0%);
-  }
-  
-}
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('/blocks/vortex/vortex.css');
+@import url('./blocks/animations/animations.css');
+@import url('./blocks//normalize/normalize.css');
+@import url('./blocks/nav/nav.css');
 
 .open-sans-300 {
   font-family: "Open Sans", sans-serif;
@@ -171,11 +77,11 @@
 .main__title{
   color: white;
   font-size: 8rem; 
-  line-height: 1.2;
   font-weight: 600;
   letter-spacing: -0.4rem;
   pointer-events: none;
   user-select: none;
+  margin-block: 0;
 }
 
 .main__paragraph{
@@ -200,222 +106,7 @@
 
 
 
-.vortex{
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  /* animation: vortex 36s infinite linear; */
-}
 
-.vortex__slide{
-  width: 15%;
-  aspect-ratio: 4/2;
-  background-color: white;
-  position: absolute;
-  transform: translatex(-50%);
-  box-shadow: 2px 2px 5px black;
-  opacity: 0.1;
-  overflow: hidden;
-}
-
-.vortex__slide_top{
-  top: 5%;
-  left: 50%;
-  /* transform: translatex(-50%); */
-  animation: twirl__top 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_bottom{
-  bottom: 5%;
-  left: 50%;
-  transform: translatex(-50%);
-  animation: twirl__bottom 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_left{
-  bottom: 50%;
-  left: 5%;
-  transform: translatex(-50%);
-  animation: twirl__left 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_right{
-  bottom: 50%;
-  right: 5%;
-  transform: translatex(0%);
-  animation: twirl__right 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_top-right{
-  top: 5%;
-  right: 10%;
-  transform: translatex(0%);
-  animation: twirl__top-right 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_bottom-right{
-  bottom: 5%;
-  right: 10%;
-  transform: translatex(0%);
-  animation: twirl__bottom-right 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_bottom-left{
-  bottom: 5%;
-  left: 10%;
-  transform: translatex(-50%);
-  animation: twirl__bottom-left 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide_top-left{
-  top: 5%;
-  left: 10%;
-  transform: translatex(-50%);
-  animation: twirl__top-left 3s cubic-bezier(.55,.13,.86,.55) forwards;
-}
-
-.vortex__slide-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nav{
-  position: fixed;
-  background-color: #1c1c1c;
-  display: flex;
-  gap: 1rem;
-  padding-inline: 1rem; 
-  padding-block: 0.5rem;
-  border-radius: 20px;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-} 
-
-.nav__ul{
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  padding-block: 0.5rem;
-
-  li{
-    overflow: hidden;
-  }
-}
-
-.nav__link{
-  color: gray;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  height: 1em;
-  font-size: 0.8rem;
-}
-
-.nav__mobile{
-  width: 80vw;
-  height: 100vh;
-  background-color:	#636363;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  z-index: 10;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 5rem;
-  padding-left: 2em;
-  transition: 300ms ease-in-out;
-
-  ul{
-    list-style: none;
-  }
-
-  a{
-    font-size: 2.5rem;
-    text-decoration: none;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: gray;
-    position: relative;
-  }
-
-  .nav__mobile-button{
-    color: white;
-  }
-}
-
-.nav__mobile_active{
-  right: 0%;
-}
-
-.nav__mobile-hamburger{
-  position: fixed;
-  top: 1rem;
-  right: 2rem;
-  z-index: 10000;
-  width: 50px;
-}
-
-#manifesto-link{
-  transition: 300ms ease-in-out;
-}
-
-#manifesto-link:hover{
-  transform: translateY(-150%);
-}
-
-#manifesto-link:after{
-  content: 'Manifesto';
-  color: white;
-}
-
-#careers-link{
-  transition: 300ms ease-in-out;
-}
-
-#careers-link:hover{
-  transform: translateY(-150%);
-}
-#careers-link:after{
-  content: 'Careers';
-  color: white;
-}
-
-#login-link
-#login-link:after{
-  content: 'Login';
-  color: white;
-}
-
-
-
-.nav__link-button{
-  border: 1px solid gray;
-  padding-inline: 2rem;
-  padding-block: 0.5rem;
-  border-radius: 12px;
-  height: min-content;
-  text-wrap: nowrap;
-}
-
-.nav__link-button_outline{
-  color: white;
-}
-.nav__link-button_dark{
-  background-color: white;
-  font-weight: 600;
-  color: #1c1c1c;
-  animation: twirl 3s cubic-bezier(.55,.13,.86,.55) forwards;
-
-}
 
 .main__work{
   position: fixed; 
@@ -485,9 +176,10 @@
 
 .main__work-title{
   font-weight: 600;
-  font-size: 10rem;
+  font-size: 7rem;
   color: white;
   transform: translateY(100%);
+  margin-block: 0;
 }
 
 .main__work-title_active{
@@ -511,7 +203,7 @@
   }
 
   .main__work-title{
-    font-size: 6rem;
+    font-size: 15vw;
   }
 
   .main__paragraph{
