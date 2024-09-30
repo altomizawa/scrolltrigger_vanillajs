@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body id='body'>
+    <main class='main'>
+      <!-- NAV DESKTOP AND TABLET -->
+      <nav class="nav">
+        <img src="/" alt="logo" class="logo" />
+        <ul class="nav__ul">
+          <li><a href="/" id='manifesto-link' class="nav__link open-sans-300">Manifesto</a></li>
+          <li><a href="/" id='careers-link' class="nav__link open-sans-300">Careers</a></li>
+        </ul>
+        <div style="display: flex; gap: 1rem;">
+          <a href="/" id='login-link' class="nav__link open-sans-300 nav__link-button nav__link-button_outline">Log In</a>
+          <a href="/" class="nav__link open-sans-300 nav__link-button nav__link-button nav__link-button_dark">Sign up</a>
+        </div>
+      </nav>
+
+      <!-- NAV MOBILE -->
+      <nav class="nav__mobile">
+        <img src="./public/assets/hamburger_menu.svg" alt="hamburger menu" class="nav__mobile-hamburger"/>
+        <ul>
+          <li>
+            <a class='open-sans-300' href="/">Manifesto</a>
+          </li>
+          <li>
+            <a class='open-sans-300' href="/">Careers</a>
+          </li>
+          <li>
+            <a class='open-sans-300 nav__mobile-button' href="/">log in</a>
+          </li>
+          <li>
+            <a class='open-sans-300 nav__mobile-button' href="/">sign up</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="main__hero-section">
+        <div class="main__title-wrapper">
+          <h1 class="main__title open-sans-300">COSMOS</h1>
+          <p class="main__paragraph open-sans-300">A discovery engine for <span id="profession">creatives</span></p>
+        </div>
+        <div class="main__scroll-icon">
+          <p class="open-sans-300">SCROLL</p>
+          <img src="./public/assets/ScrollAnimation.gif" alt="scroll down icon animation">
+        </div>
+        <div class="vortex"></div>
+      </section>
+      <section class="main__work">
+        <div class="main__work-grid">
+          <div id='column1' class="main__work-column"></div>
+          <div id='column2' class="main__work-column"></div>
+          <div id='column3' class="main__work-column"></div>
+          <div id='column4' class="main__work-column"></div>
+          <div id='column5' class="main__work-column"></div>
+        </div>
+        <div class="main__work-title-wrapper">
+          <h2 class="open-sans-300 main__work-title">WORK</h2>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/cursorAnimation.js"></script>
+  </body>
+</html>
