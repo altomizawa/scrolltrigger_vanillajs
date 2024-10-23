@@ -3,24 +3,24 @@ import { createCursor, getCoordinates } from './cursorAnimation'
 const slide = document.querySelector('.vortex__slide')
 
 const slides = [
-  '/assets/images/adam-jicha-arxIJ2pWXXc-unsplash.jpg', '/assets/images/alice-donovan-rouse-yu68fUQDvOI-unsplash.jpg',
-  '/assets/images/andy-hermawan-XOEF7sNrSw0-unsplash.jpg',
-  '/assets/images/avery-klein-C_dRtsnBOQA-unsplash.jpg',
-  '/assets/images/avery-klein-C_dRtsnBOQA-unsplash.jpg',
-  '/assets/images/birmingham-museums-trust-_sn71oyTN4o-unsplash.jpg',
-  '/assets/images/birmingham-museums-trust-v15kmerLWcA-unsplash.jpg',
-  '/assets/images/daniil-silantev-UIcBEy5TDTA-unsplash.jpg',
-  '/assets/images/efe-kurnaz-RnCPiXixooY-unsplash.jpg', 
-  '/assets/images/fons-heijnsbroek-abstract-art-EPfBNIKZ0W8-unsplash.jpg',
-  '/assets/images/hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg',
-  '/assets/images/imkara-visual-UGWS3abjoKQ-unsplash.jpg',
-  '/assets/images/jo-szczepanska-9OKGEVJiTKk-unsplash.jpg',
-  '/assets/images/premium_photo-1671019808276-e35ce3aca4de.avif',
-  '/assets/images/premium_photo-1680710431350-1adb85d4fe22.avif',
-  '/assets/images/rubaitul-azad-4nWYZynLp4k-unsplash.jpg',
-  '/assets/images/sangharsh-lohakare-8o_LkMpo8ug-unsplash.jpg',
-  '/assets/images/youzi-lin-bcBNBdzcq2k-unsplash.jpg',
-  '/assets/images/zach-key-rKE6rXOl14U-unsplash.jpg'
+  './assets/images/adam-jicha-arxIJ2pWXXc-unsplash.jpg', './assets/images/alice-donovan-rouse-yu68fUQDvOI-unsplash.jpg',
+  './assets/images/andy-hermawan-XOEF7sNrSw0-unsplash.jpg',
+  './assets/images/avery-klein-C_dRtsnBOQA-unsplash.jpg',
+  './assets/images/avery-klein-C_dRtsnBOQA-unsplash.jpg',
+  './assets/images/birmingham-museums-trust-_sn71oyTN4o-unsplash.jpg',
+  './assets/images/birmingham-museums-trust-v15kmerLWcA-unsplash.jpg',
+  './assets/images/daniil-silantev-UIcBEy5TDTA-unsplash.jpg',
+  './assets/images/efe-kurnaz-RnCPiXixooY-unsplash.jpg', 
+  './assets/images/fons-heijnsbroek-abstract-art-EPfBNIKZ0W8-unsplash.jpg',
+  './assets/images/hutomo-abrianto-9mPl0Zo7_gQ-unsplash.jpg',
+  './assets/images/imkara-visual-UGWS3abjoKQ-unsplash.jpg',
+  './assets/images/jo-szczepanska-9OKGEVJiTKk-unsplash.jpg',
+  './assets/images/premium_photo-1671019808276-e35ce3aca4de.avif',
+  './assets/images/premium_photo-1680710431350-1adb85d4fe22.avif',
+  './assets/images/rubaitul-azad-4nWYZynLp4k-unsplash.jpg',
+  './assets/images/sangharsh-lohakare-8o_LkMpo8ug-unsplash.jpg',
+  './assets/images/youzi-lin-bcBNBdzcq2k-unsplash.jpg',
+  './assets/images/zach-key-rKE6rXOl14U-unsplash.jpg'
 ]
 
 const professions = [
